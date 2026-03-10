@@ -4,6 +4,7 @@ body {
   margin: 0 auto;
   font-family: "Cormorant", serif;
   background-color: #ccc3b9;
+  inline-size: 768px;
 }
 
 .container {
@@ -25,7 +26,7 @@ body {
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
+  right: 10px;
   background-image: url(../images/busina_top.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -38,7 +39,7 @@ body {
   content: "";
   position: absolute;
   top: -280px;
-  left: 0;
+  left: 10px;
   background-image: url(../images/busina.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -73,9 +74,10 @@ body {
 
 .header__title {
   font-weight: 700;
-  font-size: 16px;
+  font-size: clamp(1.375rem, 0.9167rem + 2.037vw, 2.75rem);  
   font-style: italic;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .header__subtitle {
@@ -87,7 +89,7 @@ body {
   gap: 30px;
   font-family: "Kindentosca", sans-serif;
   font-weight: 100;
-  font-size: 64px;
+  font-size: clamp(6.5rem, 4.5rem + 8.8889vw, 12.5rem);
   text-align: center;
 }
 
@@ -100,8 +102,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
-  block-size: 112px;
-  inline-size: 70px;
+  block-size: 100%;
+  inline-size: 100%;
 }
 
 .header__date {
@@ -109,7 +111,7 @@ body {
   flex-direction: column;
   justify-content: center;
   font-weight: 700;
-  font-size: 20px;
+  font-size: clamp(2rem, 1.3333rem + 2.963vw, 4rem);
   font-style: italic;
   text-align: center;
   line-height: 100%;
@@ -126,16 +128,47 @@ body {
 }
 
 .welcome__title {
+  display: block;
   position: relative;
+  padding: 50px 50px 0 50px;
   font-weight: 700;
   font-size: 36px;
   font-style: italic;
   text-align: center;
-  text-shadow: 0 -20px rgb(0 0 0 / 0.25);
+}
+
+.text-shadow-waiting::before {
+  content: "Мы ждем вас!";
+  font-size: 50px;
+  inset: 25px 0;
+  inline-size: 100%;
+  block-size: 100%;
+  color: rgb(0 0 0 / 0.25);
+  position: absolute;
+}
+
+.text-shadow-base::before {
+  content: "База отдыха Сосновый бор";
+  font-size: 50px;
+  inset: 10px 0;
+  inline-size: 100%;
+  block-size: 100%;
+  color: rgb(0 0 0 / 0.25);
+  position: absolute;
+}
+
+.text-shadow-dress::before {
+  content: "Dress Code";
+  font-size: 50px;
+  inset: 25px 40px;
+  inline-size: 100%;
+  block-size: 100%;
+  color: rgb(0 0 0 / 0.25);
+  position: absolute;
 }
 
 .welcome__text {
-  font-size: 16px;
+  font-size: 24px;
   text-align: center;
 }
 
@@ -147,10 +180,21 @@ body {
   font-style: italic;
   text-align: center;
   line-height: 50%;
+  position: relative;
+}
+
+.welcome__date::before {
+  content: "2026";
+  font-size: 120px;
+  inset: 5px -25px;
+  inline-size: 100%;
+  block-size: 100%;
+  color: rgb(0 0 0 / 0.25);
+  position: absolute; 
 }
 
 .welcome__time {
-  font-size: 16px;
+  font-size: 24px;
   text-align: center;
 }
 
@@ -170,11 +214,12 @@ body {
 .dresscode__title {
   font-size: 45px;
   font-style: italic;
-  text-shadow: 0 -20px rgb(0 0 0 / 0.25);
+  position: relative;
+  padding: 50px 50px 0 50px;
 }
 
 .dresscode__text {
-  font-size: 16px;
+  font-size: 24px;
   text-align: center;
 }
 

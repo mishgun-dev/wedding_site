@@ -125,8 +125,8 @@ body {
 
 .welcome__title {
   display: block;
-  padding: 50px;
   font-size: 44px;
+  padding: clamp(2.5rem, 1.25rem + 5.5556vw, 6.25rem);;
   font-style: italic;
   font-weight: 700;
   text-align: center;
@@ -136,7 +136,7 @@ body {
 .welcome__title:first-of-type::before {
   content: "Мы ждем вас!";
   color: rgb(0 0 0 / .25);
-  font-size: 60px;
+  font-size: clamp(2.5rem, 1.6667rem + 3.7037vw, 5rem);
   position: absolute;
   inset: 0;
 }
@@ -144,7 +144,7 @@ body {
 .welcome__title:last-of-type::before {
   content: "База отдыха «Сосновый бор»";
   color: rgb(0 0 0 / .25);
-  font-size: 50px;
+  font-size: clamp(2.5rem, 1.6667rem + 3.7037vw, 5rem);
   position: absolute;
   inset: 0;
 }
@@ -210,21 +210,15 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  gap: 24px;
   inline-size: 100%;
-  margin-top: 32px;
 }
 
 .dresscode__image-female {
-  inline-size: min(100%, 260px);
-  block-size: auto;
-  object-fit: contain;
+  block-size: clamp(12.5rem, 8.3333rem + 18.5185vw, 25rem);;
 }
 
 .dresscode__image-male {
-  inline-size: min(100%, 140px);
-  block-size: auto;
-  object-fit: contain;
+  block-size: clamp(12.5rem, 8.3333rem + 18.5185vw, 25rem);;
 }
 
 .footer {

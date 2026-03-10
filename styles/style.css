@@ -165,18 +165,11 @@ body {
 
 .dresscode__title {
   display: block;
+  text-shadow: 0 -20px rgb(0 0 0 / .25);
   padding: 40px;
   font-size: 44px;
   font-style: italic;
   position: relative;
-}
-
-.dresscode__title::before {
-  content: "Dress Code";
-  color: rgb(0 0 0 / .25);
-  font-size: 60px;
-  position: absolute;
-  inset: 0;
 }
 
 .dresscode__text {

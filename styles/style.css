@@ -1,18 +1,18 @@
 body {
-  font-family: 'Cormorant', serif;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  font-family: "Cormorant", serif;
   background-color: #ccc3b9;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
-  block-size: 100%;
+  align-items: center;
   padding: 20px;
+  block-size: 100%;
 }
 
 .border {
@@ -22,114 +22,114 @@ body {
 
 .decorated-zone-header::before {
   content: "";
-  background-image: url(../images/busina_top.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   position: absolute;
-  inline-size: 350px;
-  block-size: 370px;
   top: 0;
   right: 0;
+  background-image: url(../images/busina_top.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  inline-size: 350px;
+  block-size: 370px;
 }
 
 .decorated-zone-left::before {
   content: "";
-  background-image: url(../images/busina.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   position: absolute;
-  inline-size: 350px;
-  block-size: 630px;
   top: -280px;
   left: 0;
+  background-image: url(../images/busina.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   transform: rotate(180deg);
+  inline-size: 350px;
+  block-size: 630px;
 }
 
 .decorated-zone-right::before {
   content: "";
-  background-image: url(../images/busina.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   position: absolute;
-  inline-size: 350px;
-  block-size: 6300px;
   top: -270px;
   right: 0;
+  background-image: url(../images/busina.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  inline-size: 350px;
+  block-size: 6300px;
 }
 
 .header {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  block-size: 100vb;
   padding: 10px;
-  position: relative;
+  block-size: 100vb;
 }
 
 .header__title {
+  font-weight: 700;
   font-size: clamp(2.125rem, 1.4167rem + 3.1481vw, 4.25rem);
   font-style: italic;
-  font-weight: 700;
   text-align: center;
 }
 
 .header__subtitle {
   position: relative;
-  font-family: 'Kindentosca', sans-serif;
-  font-size: clamp(6.375rem, 4.3333rem + 9.0741vw, 12.5rem);
-  font-weight: 100;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+  font-family: "Kindentosca", sans-serif;
+  font-weight: 100;
+  font-size: clamp(6.375rem, 4.3333rem + 9.0741vw, 12.5rem);
+  text-align: center;
 }
 
 .header__subtitle::before {
   content: "";
-  background-image: url(../images/bukavka.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  margin: auto;
+  position: absolute;
   inset: 0;
+  margin: auto;
+  background-image: url(../images/bukavka.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
   block-size: 100%;
   inline-size: 100%;
-  position: absolute;
 }
 
 .header__date {
-  font-style: italic;
-  font-weight: 700;
-  font-size: clamp(2.25rem, 1.4577rem + 3.3803vw, 4.5rem);
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
+  font-weight: 700;
+  font-size: clamp(2.25rem, 1.4577rem + 3.3803vw, 4.5rem);
+  font-style: italic;
+  text-align: center;
 }
 
 .welcome {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-block-size: 100vb;
   padding: 10px;
-  position: relative;
+  min-block-size: 100vb;
 }
 
 .welcome__title {
-  font-size: clamp(3.125rem, 2.0833rem + 4.6296vw, 6.25rem);
-  text-shadow: 0 -20px rgb(0 0 0 / .25);
-  font-style: italic;
-  font-weight: 700;
-  text-align: center;
   position: relative;
+  font-weight: 700;
+  font-size: clamp(3.125rem, 2.0833rem + 4.6296vw, 6.25rem);
+  font-style: italic;
+  text-align: center;
+  text-shadow: 0 -20px rgb(0 0 0 / 0.25);
 }
 
 .welcome__text {
@@ -138,8 +138,8 @@ body {
 }
 
 .welcome__date {
-  font-size: clamp(2.5rem, 1.6667rem + 3.7037vw, 5rem);
   font-weight: 400;
+  font-size: clamp(2.5rem, 1.6667rem + 3.7037vw, 5rem);
   font-style: italic;
 }
 
@@ -153,22 +153,19 @@ body {
 }
 
 .dresscode {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-block-size: 100vb;
   padding: 10px;
-  position: relative;
+  min-block-size: 100vb;
 }
 
 .dresscode__title {
-  display: block;
-  text-shadow: 0 -20px rgb(0 0 0 / .25);
-  padding: 40px;
-  font-size: 44px;
+  font-size: clamp(3.125rem, 2.0833rem + 4.6296vw, 6.25rem);
   font-style: italic;
-  position: relative;
+  text-shadow: 0 -20px rgb(0 0 0 / 0.25);
 }
 
 .dresscode__text {
@@ -177,46 +174,46 @@ body {
 }
 
 .dresscode__image-colors {
+  margin-top: 24px;
   inline-size: min(100%, 320px);
   block-size: auto;
-  margin-top: 24px;
 }
 
 .dresscode__images {
   display: flex;
-  align-items: flex-end;
   justify-content: center;
+  align-items: flex-end;
   inline-size: 100%;
 }
 
 .dresscode__image-female {
-  block-size: clamp(12.5rem, 8.3333rem + 18.5185vw, 25rem);;
+  block-size: clamp(12.5rem, 8.3333rem + 18.5185vw, 25rem);
 }
 
 .dresscode__image-male {
-  block-size: clamp(12.5rem, 8.3333rem + 18.5185vw, 25rem);;
+  block-size: clamp(12.5rem, 8.3333rem + 18.5185vw, 25rem);
 }
 
 .footer {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  block-size: 50vb;
   padding: 10px;
-  position: relative;
+  block-size: 50vb;
 }
 
 .footer__title {
   font-size: 44px;
   text-align: center;
-  filter: drop-shadow(0 4px 2px rgb(0 0 0 / .25));
+  filter: drop-shadow(0 4px 2px rgb(0 0 0 / 0.25));
 }
 
 .footer__subtitle {
+  font-weight: 700;
   font-size: 44px;
   font-style: italic;
-  font-weight: 700;
 }
 
 .ampersand {

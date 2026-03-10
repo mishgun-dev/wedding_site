@@ -4,7 +4,7 @@ body {
   margin: 0 auto;
   font-family: "Cormorant", serif;
   background-color: #ccc3b9;
-  inline-size: 768px;
+  max-inline-size: 768px;
 }
 
 .container {
